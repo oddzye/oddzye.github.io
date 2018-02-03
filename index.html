@@ -19,6 +19,7 @@
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -27,15 +28,15 @@
  	<div class="container">
  		<div class="row">
  			<div class="col-lg-7">
- 				<img src="img/main-img.png" alt="Монитор">
+ 				<img class="wow fadeInLeft" src="img/main-img.png"  alt="Монитор">
  			</div>
  			<div class="col-lg-5">
- 				<div class="header_wrapper">
- 					<p class=" header_pretitle">Веб-разработчик</p>
- 					<h1 class="header_title">Дмитрий Царев</h1>
- 					<p class="header_subtitle">Верстка на HTML/CSS <br>Разработка сайтов под ключ</p>
- 					<div class=" header_btn_and_small">
- 						<button class="header_btn">Связаться</button>
+ 				<div class="header_wrapper wow fadeInRight" >
+ 					<p class=" header_pretitle wow fadeInRight" data-wow-delay="0.5s">Веб-разработчик</p>
+ 					<h1 class="header_title wow fadeInRight" data-wow-delay="0.4s" >Дмитрий Царев</h1>
+ 					<p class="header_subtitle wow fadeInRight" data-wow-delay="0.3s">Верстка на HTML/CSS <br>Разработка сайтов под ключ</p>
+ 					<div class=" header_btn_and_small wow fadeInRight" data-wow-delay="0.2s">
+ 						<a href="https://vk.com/id229241818 " class="header_btn ">Связаться</a>
  						<small>*Это бесплатно</small>
  					</div>
  				</div>
@@ -46,7 +47,7 @@
 
 	<section class="works">
 		<div class="container">
-			<div class="box_portfolio">
+			<div class="box_portfolio wow fadeIn">
 				<h2 class="works_title">Портфолио</h2>
 				<p class="works_subtitle">Мои работы</p>
 				<div class="row">
@@ -81,22 +82,26 @@
 				<div class="col-md-4">
 					<div class="socials">
 						<p class="join">Подпишитесь:</p>
-						<a href="#"><img src="img/facebook-logo-button.png" alt="Facebook"></a>
-						<a href="https://vk.com/id229241818"><img src="img/vk-social-logotype.png" alt="Vkontakte"></a>
-						<a href="#"><img src="img/telegram-symbol.png" alt="Telegram"></a>
-						<a href="#"><img src="img/youtube-symbol.png" alt="YouTube"></a>
+						<a href="#"><img  class="wow fadeIn" data-wow-delay="0.1s" src="img/facebook-logo-button.png" alt="Facebook"></a>
+						<a href="https://vk.com/id229241818"><img class="wow fadeIn" data-wow-delay="0.2s" src="img/vk-social-logotype.png" alt="Vkontakte"></a>
+						<a href="#"><img class="wow fadeIn" data-wow-delay="0.3s" src="img/telegram-symbol.png" alt="Telegram"></a>
+						<a href="#"><img class="wow fadeIn" data-wow-delay="0.4s" src="img/youtube-symbol.png" alt="YouTube"></a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="footer_cta">
 						<p class="write">Напишите мне:</p>
-					<button class="footer_btn">Написать</button>
+						<a href="https://vk.com/id229241818" class="footer_btn">Написать</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
 
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
 
 </body>
 </html>

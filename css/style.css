@@ -43,7 +43,17 @@ header {
 	color: #072b6f;
 	padding: 15px 55px;
 	margin-top: 33px;
+	text-decoration: none;
+	display: inline-block;
+	 
 }
+
+.header_btn:hover {
+	box-shadow: none;
+	transition: 0.2s;
+
+}
+
 
 header small {
 	display: block;
@@ -189,12 +199,23 @@ footer p {
 	font-weight: 400;
 	padding:14px 45px 14px 45px;
 	margin-top: 13px;
+	text-decoration: none;
+	display: inline-block;
 }
 
 .footer_cta {
 	text-align: center;
+
 }
 
+.footer_btn:hover {
+	-webkit-transition: 0.2s ;
+	-o-transition: 0.2s ;
+	transition: 0.2s ;
+	background-color: #fff;
+	border: 3px solid #3a7dfd;
+	color: #3a7dfd;
+}
 /*******************MEDIA  QUERIES*********************/
 @media (max-width: 1200px) {
 	.header_pretitle {
@@ -274,6 +295,3 @@ footer p {
 	}
 }
 
-@medial (max-width: 576px) {
-
-}
